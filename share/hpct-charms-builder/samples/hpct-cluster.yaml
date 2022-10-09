@@ -1,0 +1,35 @@
+#
+# example: hpct-cluster.yaml
+#
+
+workdir: .
+charmsdir: charms
+
+charms:
+  hpct-compute-node-operator:
+    repo: git@github.com:j4m-can/hpct-compute-node-operator.git
+  hpct-head-node-operator:
+    repo: git@github.com:j4m-can/hpct-head-node-operator.git
+  hpct-interactive-node-operator:
+    repo: git@github.com:j4m-can/hpct-interactive-node-operator.git
+  hpct-ldap-node-operator:
+    repo: git@github.com:j4m-can/hpct-ldap-node-operator.git
+  hpct-nfs-node-operator:
+    repo: git@github.com:j4m-can/hpct-nfs-node-operator.git
+  hpct-slurm-node-operator:
+    repo: git@github.com:j4m-can/hpct-slurm-node-operator.git
+
+  hpct-configurator-operator:
+    repo: git@github.com:j4m-can/hpct-configurator-operator.git
+  hpct-control-operator:
+    repo: git@github.com:j4m-can/hpct-control-operator.git
+
+  hpct-ldap-client-operator:
+    repo: git@github.com:canonical/hpct-ldap-client-operator.git
+  hpct-ldap-server-operator:
+    repo: git@github.com:canonical/hpct-ldap-server-operator.git
+  hpct-slurm-client-operator:
+    repo: git@github.com:canonical/hpct-slurm-client-operator.git
+  hpct-slurm-server-operator:
+    repo: git@github.com:canonical/hpct-slurm-server-operator.git
+
