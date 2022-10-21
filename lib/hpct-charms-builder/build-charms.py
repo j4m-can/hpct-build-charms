@@ -28,6 +28,7 @@ class Builder:
     def build(self, name):
         charmsdir = self.config["charmsdir"]
         repo = self.config["charms"][name]["repo"]
+        branch = self.config["charms"][name].get("branch") or None
         workdir = self.config["workdir"]
         builddir = f"{workdir}/{name}"
 
@@ -42,7 +43,10 @@ class Builder:
         print(f"looking for working directory ({builddir})...")
         if not os.path.exists(builddir):
             print("cloning repo ...")
-            subprocess.run(["git", "clone", repo], cwd=workdir)
+            args = ["git", "clone", repo]
+            if branch:
+                args.extend(["-b", branch])
+            subprocess.run(args, cwd=workdir)
         else:
             print("updating from repo ...")
             subprocess.run(["git", "pull"], cwd=builddir)

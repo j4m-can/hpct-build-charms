@@ -8,28 +8,39 @@ charmsdir: charms
 charms:
   hpct-compute-node-operator:
     repo: git@github.com:j4m-can/hpct-compute-node-operator.git
+    branch:
   hpct-head-node-operator:
     repo: git@github.com:j4m-can/hpct-head-node-operator.git
+    branch:
   hpct-interactive-node-operator:
     repo: git@github.com:j4m-can/hpct-interactive-node-operator.git
+    branch:
   hpct-ldap-node-operator:
     repo: git@github.com:j4m-can/hpct-ldap-node-operator.git
+    branch:
   hpct-nfs-node-operator:
     repo: git@github.com:j4m-can/hpct-nfs-node-operator.git
+    branch:
   hpct-slurm-node-operator:
     repo: git@github.com:j4m-can/hpct-slurm-node-operator.git
+    branch:
 
   hpct-configurator-operator:
     repo: git@github.com:j4m-can/hpct-configurator-operator.git
+    branch:
   hpct-control-operator:
     repo: git@github.com:j4m-can/hpct-control-operator.git
+    branch:
 
   hpct-ldap-client-operator:
     repo: git@github.com:canonical/hpct-ldap-client-operator.git
+    branch:
   hpct-ldap-server-operator:
     repo: git@github.com:canonical/hpct-ldap-server-operator.git
+    branch:
   hpct-slurm-client-operator:
     repo: git@github.com:canonical/hpct-slurm-client-operator.git
+    branch:
   hpct-slurm-server-operator:
     repo: git@github.com:canonical/hpct-slurm-server-operator.git
-
+    branch:
