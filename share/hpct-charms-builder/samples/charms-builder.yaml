@@ -5,6 +5,25 @@
 workdir: .
 charmsdir: charms
 
+bases:
+  - name: "centos"
+    channel: "8"
+    image: oracle-8
+  - name: "centos"
+    channel: "9"
+    image:
+  - name: "opensuse"
+    channel: "leap"
+    image:
+  - name: "oracle"
+    channel: "8"
+    image: oracle-8
+  - name: "oracle"
+    channel: "9"
+    image:
+  - name: "ubuntu"
+    channel: "22.04"
+
 charms:
   hpct-compute-node-operator:
     repo: git@github.com:j4m-can/hpct-compute-node-operator.git
